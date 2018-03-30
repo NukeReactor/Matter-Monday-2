@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title></title>
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+      
+      html {
+        font-family: "Ubuntu", sans-serif;
+        background: linear-gradient(#87b5ff, white, #87b5ff);
+      }
+      
+      body {
+        text-align: center;
+      }
+      
+      h1 {
+        text-decoration: underline;
+      }
+      
+      a {
+        color: black;
+      }
+      
+      a:hover {
+        color: #639fff;
+      }
+      
+      a:active {
+        color: #2d7eff;
+      }
+      
+      button {
+        border: none;
+        background-color: #1f57af;
+        padding: 15px 20px;
+        text-size: 15px;
+        border-radius: 15px;
+        box-shadow: 3px 7px black;
+        outline: none;
+      }
+      
+      button:hover {
+        color: white;
+        background-color: #0a3b87;
+      }
+      
+      button:active {
+        background-color: #042a66;
+        color: white;
+        transform: translateY(4px);
+        box-shadow: 3px 3px black;
+      }
+      
+      img {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Greenhouse Gases (Human Emissions)</h1>
+    <p><strong>What are the man-made greenhouse gases?</strong> <br />Many greenhouse gases occur naturally in the atmosphere, such as carbon dioxide, methane, water vapor, and nitrous oxide, while others are synthetic.<br /> Those that are man-made include the chlorofluorocarbons (CFCs), hydrofluorocarbons (HFCs) and Perfluorocarbons (PFCs), as well as sulfur hexafluoride (SF6).</p>
+    
+    <p id="info2"><strong>What are the three main greenhouse gases and where do they come from?</strong></br />
+  The major greenhouse gas is of course carbon dioxide (CO2) and nearly all CO2 comes from fossil fuels and land-use change. <br />But methane (CH4) and nitrous oxide (N2O), which mostly come from agriculture and waste, are also significant GHGs and shouldn't be discounted</p>
+    
+    <img src="http://www.geocraft.com/WVFossils/PageMill_Images/image270e.gif" alt="a pie chart" width="300" height="300">
+    
+    <img src="https://www.researchgate.net/publication/23657299/figure/fig6/AS:268240861528080@1440965013729/Annual-greenhouse-gas-emissions-by-sector-Relative-contributions-of-man-made-greenhouse.png" alt="Another charty boi" width="300" height="300">
+    
+    <br>
+    
+    <button onclick="showMore()" id="infoButt1">Show More</button>
+    <button onclick="showLess()" id="infoButt2">Show Less</button>
+    
+    <hr>
+    
+    
+    <a href="https://www.google.com/search?q=man+made+greenhouse+gases&rlz=1CALEAL_enUS790US790&oq=man+made+&aqs=chrome.0.0j69i60j69i57j0l3.11756j0j4&sourceid=chrome&ie=UTF-8">Information Source</a>
+
+    <script>
+      document.getElementById("infoButt2").style.display = "none";
+      document.getElementById("info2").style.display = "none";
+      
+      function showMore() {
+        document.getElementById("info2").style.display = "inline-block";
+        document.getElementById("infoButt1").style.display = "none";
+        document.getElementById("infoButt2").style.display = "inline-block";
+      }
+      
+      function showLess() {
+        document.getElementById("info2").style.display = "none";
+        document.getElementById("infoButt1").style.display = "inline-block";
+        document.getElementById("infoButt2").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
